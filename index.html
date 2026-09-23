@@ -1,537 +1,385 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="UTF-8">
-
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Yasmin — aspiring Java Developer portfolio">
     <title>Yasmin | Java Developer</title>
-
     <link rel="stylesheet" href="style.css">
-
 </head>
 
-
 <body>
+    <div class="progress-bar" id="progressBar"></div>
 
+    <nav class="navbar">
+        <a href="#home" class="logo">Yasmin<span>.</span></a>
 
-    <!-- ================= NAVIGATION ================= -->
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">☰</button>
 
-    <nav>
-
-        <h2>Yasmin</h2>
-
-        <ul>
-
-            <li>
-                <a href="#home">Home</a>
-            </li>
-
-            <li>
-                <a href="#about">About</a>
-            </li>
-
-            <li>
-                <a href="#skills">Skills</a>
-            </li>
-
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-
-            <li>
-                <a href="#education">Education</a>
-            </li>
-
-            <li>
-                <a href="#certifications">Certifications</a>
-            </li>
-
-            <li>
-                <a href="#contact">Contact</a>
-            </li>
-
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#logs">Learning Logs</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
-
     </nav>
 
-
-
-    <!-- ================= HOME ================= -->
-
-    <section class="hero" id="home">
-
-        <div class="hero-content">
-
-            <p>Hello, I'm</p>
-
-            <h1>
-                Yasmin
-            </h1>
-
-            <h2>
-                Java Developer
-            </h2>
-
-            <p>
-                Aspiring Java Developer with an interest in
-                software development, problem solving and
-                web technologies.
-            </p>
-
-            <p>
-                Currently pursuing B.Tech in Computer Science
-                and Engineering and building projects to improve
-                my development skills.
-            </p>
-
-            <div>
-
-                <a href="#projects" class="btn">
-                    View Projects
-                </a>
-
-                <a href="#contact" class="btn">
-                    Contact Me
-                </a>
-
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= ABOUT ================= -->
-
-    <section id="about">
-
-        <h2 class="section-title">
-            About Me
-        </h2>
-
-        <div class="about">
-
-            <p>
-                I am an aspiring Java Developer currently pursuing
-                a B.Tech in Computer Science and Engineering.
-            </p>
-
-            <br>
-
-            <p>
-                I am interested in programming, software development,
-                problem solving and web technologies. I enjoy learning
-                new technologies and building projects that help me
-                improve my practical development skills.
-            </p>
-
-            <br>
-
-            <p>
-                My technical interests include Java, Python, SQL,
-                web development, databases and software development
-                tools.
-            </p>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= SKILLS ================= -->
-
-    <section id="skills">
-
-        <h2 class="section-title">
-            My Skills
-        </h2>
-
-        <div class="skills-container">
-
-
-            <div class="skill">
-                Java
-            </div>
-
-
-            <div class="skill">
-                Python
-            </div>
-
-
-            <div class="skill">
-                C
-            </div>
-
-
-            <div class="skill">
-                DSA
-            </div>
-
-
-            <div class="skill">
-                OOP
-            </div>
-
-
-            <div class="skill">
-                DBMS
-            </div>
-
-
-            <div class="skill">
-                SQL
-            </div>
-
-
-            <div class="skill">
-                HTML
-            </div>
-
-
-            <div class="skill">
-                CSS
-            </div>
-
-
-            <div class="skill">
-                JavaScript
-            </div>
-
-
-            <div class="skill">
-                Git
-            </div>
-
-
-            <div class="skill">
-                GitHub
-            </div>
-
-
-            <div class="skill">
-                VS Code
-            </div>
-
-
-            <div class="skill">
-                IntelliJ IDEA
-            </div>
-
-
-            <div class="skill">
-                MySQL
-            </div>
-
-
-            <div class="skill">
-                OpenCV
-            </div>
-
-
-            <div class="skill">
-                MediaPipe
-            </div>
-
-
-            <div class="skill">
-                PyAutoGUI
-            </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= PROJECTS ================= -->
-
-    <section id="projects">
-
-        <h2 class="section-title">
-            My Project
-        </h2>
-
-        <div class="projects-container">
-
-
-            <!-- DevFlow -->
-
-            <div class="project-card">
-
-                <h3>
-                    DevFlow
-                </h3>
-
-                <p>
-                    A Java Spring Boot web application developed
-                    to practice real-world backend development.
+    <main>
+        <!-- HERO -->
+        <section class="hero" id="home">
+            <div class="hero-glow glow-one"></div>
+            <div class="hero-glow glow-two"></div>
+
+            <div class="hero-content reveal">
+                <p class="eyebrow">BUILD • LEARN • GROW</p>
+                <h1>Hi, I'm <span>Yasmin</span></h1>
+                <h2><span id="typing"></span><span class="cursor">|</span></h2>
+                <p class="hero-text">
+                    An aspiring Java Developer focused on backend development,
+                    problem solving and building practical software projects.
                 </p>
 
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary">Explore My Work</a>
+                    <a href="#contact" class="btn secondary">Let's Connect</a>
+                </div>
+
+                <div class="quick-stats">
+                    <div><strong>Java</strong><span>Core Focus</span></div>
+                    <div><strong>Spring Boot</strong><span>Backend</span></div>
+                    <div><strong>DSA</strong><span>Problem Solving</span></div>
+                </div>
+            </div>
+
+            <div class="terminal-card reveal">
+                <div class="terminal-top">
+                    <span></span><span></span><span></span>
+                    <small>yasmin@developer:~</small>
+                </div>
+                <div class="terminal-body">
+                    <p><span class="green">$</span> whoami</p>
+                    <p class="output">Aspiring Java Developer</p>
+                    <p><span class="green">$</span> current-focus</p>
+                    <p class="output">Java • Spring Boot • DSA • SQL</p>
+                    <p><span class="green">$</span> status</p>
+                    <p class="output success">● Learning & building...</p>
+                    <p><span class="green">$</span> next-goal</p>
+                    <p class="output">Become a strong software engineer</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT -->
+        <section id="about">
+            <div class="section-heading reveal">
+                <span>01</span>
+                <h2>About Me</h2>
+                <p>A little about my journey</p>
+            </div>
+
+            <div class="about-grid">
+                <div class="about-card reveal">
+                    <div class="icon">✦</div>
+                    <h3>Learning by Building</h3>
+                    <p>
+                        I am pursuing B.Tech in Computer Science and Engineering
+                        and improving my development skills through hands-on projects,
+                        coding practice and continuous learning.
+                    </p>
+                </div>
+
+                <div class="about-card reveal">
+                    <div class="icon">⌘</div>
+                    <h3>What I Enjoy</h3>
+                    <p>
+                        I enjoy Java programming, software development, problem solving,
+                        databases and web technologies. I like understanding how systems
+                        work and turning ideas into working applications.
+                    </p>
+                </div>
+
+                <div class="about-card reveal">
+                    <div class="icon">↗</div>
+                    <h3>My Direction</h3>
+                    <p>
+                        My current focus is strengthening Java, Spring Boot, SQL and DSA
+                        while gaining practical experience with real-world development tools.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="alt-section">
+            <div class="section-heading reveal">
+                <span>02</span>
+                <h2>Skills & Tools</h2>
+                <p>Technologies I am learning and using</p>
+            </div>
+
+            <div class="skills-wrap reveal">
+                <span class="skill-tag featured">Java</span>
+                <span class="skill-tag featured">Spring Boot</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">C</span>
+                <span class="skill-tag">DSA</span>
+                <span class="skill-tag">OOP</span>
+                <span class="skill-tag">DBMS</span>
+                <span class="skill-tag">SQL</span>
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Git</span>
+                <span class="skill-tag">GitHub</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">IntelliJ IDEA</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">OpenCV</span>
+                <span class="skill-tag">MediaPipe</span>
+                <span class="skill-tag">PyAutoGUI</span>
+            </div>
+        </section>
+
+        <!-- PROJECT -->
+        <section id="projects">
+            <div class="section-heading reveal">
+                <span>03</span>
+                <h2>Featured Project</h2>
+                <p>One project, built with real development practice</p>
+            </div>
+
+            <article class="project-card-large reveal">
+                <div class="project-number">01</div>
+                <div class="project-content">
+                    <div class="project-label">JAVA • SPRING BOOT • BACKEND</div>
+                    <h3>DevFlow</h3>
+                    <p>
+                        A Java Spring Boot web application developed to practice
+                        real-world backend development. The project uses Spring Data JPA,
+                        Hibernate, Spring Security and an H2 database.
+                    </p>
+
+                    <div class="tech-list">
+                        <span>Java</span>
+                        <span>Spring Boot</span>
+                        <span>JPA</span>
+                        <span>Hibernate</span>
+                        <span>Security</span>
+                        <span>H2</span>
+                    </div>
+
+                    <a href="https://github.com/yasminshaiksy-art/DevFlow"
+                       class="btn primary" target="_blank" rel="noopener">
+                        View DevFlow on GitHub ↗
+                    </a>
+                </div>
+
+                <div class="project-visual">
+                    <div class="code-window">
+                        <div class="code-title"><span>DevFlow.java</span><span>● ● ●</span></div>
+                        <pre><code>@SpringBootApplication
+public class DevFlowApplication {
+
+  public static void main(String[] args) {
+    SpringApplication.run(
+      DevFlowApplication.class, args
+    );
+  }
+}</code></pre>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <!-- LEARNING LOGS -->
+        <section id="logs" class="alt-section">
+            <div class="section-heading reveal">
+                <span>04</span>
+                <h2>Learning Logs</h2>
+                <p>A snapshot of what I am building and improving</p>
+            </div>
+
+            <div class="timeline">
+                <article class="log reveal">
+                    <div class="log-dot"></div>
+                    <div class="log-date">PROJECT LOG</div>
+                    <h3>Built DevFlow with Spring Boot</h3>
+                    <p>
+                        Worked with Spring Boot, Spring Data JPA, Hibernate,
+                        Spring Security and H2 while learning how backend layers
+                        connect together.
+                    </p>
+                </article>
+
+                <article class="log reveal">
+                    <div class="log-dot"></div>
+                    <div class="log-date">DEVELOPMENT LOG</div>
+                    <h3>Practicing Java & DSA</h3>
+                    <p>
+                        Continuing to strengthen Java fundamentals, OOP,
+                        data structures, algorithms and problem-solving skills.
+                    </p>
+                </article>
+
+                <article class="log reveal">
+                    <div class="log-dot"></div>
+                    <div class="log-date">PORTFOLIO LOG</div>
+                    <h3>Published My Developer Portfolio</h3>
+                    <p>
+                        Built and published this portfolio with GitHub Pages,
+                        GitHub version control and a responsive HTML/CSS interface.
+                    </p>
+                </article>
+
+                <article class="log reveal">
+                    <div class="log-dot"></div>
+                    <div class="log-date">NEXT LOG</div>
+                    <h3>Keep Building. Keep Learning.</h3>
+                    <p>
+                        My next step is to keep improving backend development,
+                        project quality, communication and interview readiness.
+                    </p>
+                </article>
+            </div>
+        </section>
+
+        <!-- EDUCATION -->
+        <section id="education">
+            <div class="section-heading reveal">
+                <span>05</span>
+                <h2>Education</h2>
+                <p>My academic journey</p>
+            </div>
+
+            <div class="education-grid">
+                <article class="edu-card reveal">
+                    <span class="edu-year">2023 — 2027</span>
+                    <h3>B.Tech — Computer Science & Engineering</h3>
+                    <p>Gowtami Institute of Technology and Management for Women, JNTUA</p>
+                    <strong>82%</strong>
+                </article>
+
+                <article class="edu-card reveal">
+                    <span class="edu-year">Intermediate</span>
+                    <h3>Intermediate</h3>
+                    <p>Sri Vidya Junior College, Proddutur</p>
+                    <strong>60%</strong>
+                </article>
+
+                <article class="edu-card reveal">
+                    <span class="edu-year">SSC</span>
+                    <h3>SSC</h3>
+                    <p>Sri Guru Ragavendra High School</p>
+                    <strong>98%</strong>
+                </article>
+            </div>
+        </section>
+
+        <!-- CERTIFICATIONS -->
+        <section id="certifications" class="alt-section">
+            <div class="section-heading reveal">
+                <span>06</span>
+                <h2>Certifications</h2>
+                <p>Courses and learning milestones</p>
+            </div>
+
+            <div class="cert-grid">
+                <div class="cert-card reveal"><span>01</span><h3>Java Programming</h3><p>PrepInsta</p></div>
+                <div class="cert-card reveal"><span>02</span><h3>Python Programming</h3><p>PrepInsta</p></div>
+                <div class="cert-card reveal"><span>03</span><h3>C Programming</h3><p>PrepInsta</p></div>
+                <div class="cert-card reveal"><span>04</span><h3>English Language for Competitive Examinations</h3><p>NPTEL</p></div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact-section">
+            <div class="contact-box reveal">
+                <p class="eyebrow">LET'S CONNECT</p>
+                <h2>Have an opportunity or want to talk?</h2>
                 <p>
-                    The project uses Spring Data JPA, Hibernate,
-                    Spring Security and an H2 database.
+                    I am open to learning, collaboration and opportunities
+                    where I can grow as a software developer.
                 </p>
 
-                <p>
-                    <strong>Technologies:</strong>
-                    Java, Spring Boot, Spring Data JPA,
-                    Hibernate, Spring Security, H2
-                </p>
-
-                <a
-                    href="https://github.com/yasminshaiksy-art/DevFlow"
-                    class="btn"
-                    target="_blank">
-
-                    View GitHub
-
-                </a>
-
+                <div class="contact-buttons">
+                    <a href="mailto:yasminshaiksy@gmail.com" class="btn primary">Email Me</a>
+                    <a href="https://github.com/yasminshaiksy-art" class="btn secondary" target="_blank" rel="noopener">GitHub</a>
+                    <a href="https://linkedin.com/in/yasmin-s-818677303" class="btn secondary" target="_blank" rel="noopener">LinkedIn</a>
+                </div>
             </div>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= EDUCATION ================= -->
-
-    <section id="education">
-
-        <h2 class="section-title">
-            Education
-        </h2>
-
-        <div class="about">
-
-
-            <h3>
-                B.Tech — Computer Science & Engineering
-            </h3>
-
-            <p>
-                Gowtami Institute of Technology and Management
-                for Women, JNTUA
-            </p>
-
-            <p>
-                2023 – 2027
-            </p>
-
-            <p>
-                Current Percentage: 82%
-            </p>
-
-
-            <br>
-
-
-            <h3>
-                Intermediate
-            </h3>
-
-            <p>
-                Sri Vidya Junior College, Proddutur
-            </p>
-
-            <p>
-                Percentage: 60%
-            </p>
-
-
-            <br>
-
-
-            <h3>
-                SSC
-            </h3>
-
-            <p>
-                Sri Guru Ragavendra High School
-            </p>
-
-            <p>
-                Percentage: 98%
-            </p>
-
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= CERTIFICATIONS ================= -->
-
-    <section id="certifications">
-
-        <h2 class="section-title">
-            Certifications
-        </h2>
-
-        <div class="about">
-
-            <h3>
-                Java Programming
-            </h3>
-
-            <p>
-                PrepInsta
-            </p>
-
-            <br>
-
-            <h3>
-                Python Programming
-            </h3>
-
-            <p>
-                PrepInsta
-            </p>
-
-            <br>
-
-            <h3>
-                C Programming
-            </h3>
-
-            <p>
-                PrepInsta
-            </p>
-
-            <br>
-
-            <h3>
-                English Language for Competitive Examinations
-            </h3>
-
-            <p>
-                NPTEL
-            </p>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= STRENGTHS ================= -->
-
-    <section id="strengths">
-
-        <h2 class="section-title">
-            Strengths
-        </h2>
-
-        <div class="skills-container">
-
-            <div class="skill">
-                Problem Solving
-            </div>
-
-            <div class="skill">
-                Communication
-            </div>
-
-            <div class="skill">
-                Teamwork
-            </div>
-
-            <div class="skill">
-                Quick Learning
-            </div>
-
-            <div class="skill">
-                Leadership
-            </div>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- ================= CONTACT ================= -->
-
-    <section id="contact" class="contact">
-
-        <h2 class="section-title">
-            Contact Me
-        </h2>
-
-        <p>
-            Feel free to connect with me for opportunities,
-            collaboration and professional networking.
-        </p>
-
-
-        <br>
-
-
-        <!-- Email -->
-
-        <a
-            href="mailto:yasminshaiksy@gmail.com"
-            class="btn">
-
-            📧 Email Me
-
-        </a>
-
-
-        <!-- GitHub -->
-
-        <a
-            href="https://github.com/yasminshaiksy-art"
-            class="btn"
-            target="_blank">
-
-            GitHub
-
-        </a>
-
-
-        <!-- LinkedIn -->
-
-        <a
-            href="https://linkedin.com/in/yasmin-s-818677303"
-            class="btn"
-            target="_blank">
-
-            LinkedIn
-
-        </a>
-
-
-    </section>
-
-
-
-    <!-- ================= FOOTER ================= -->
+        </section>
+    </main>
 
     <footer>
-
-        <p>
-            © 2026 Yasmin. All Rights Reserved.
-        </p>
-
-        <p>
-            Built with HTML & CSS
-        </p>
-
+        <p>© <span id="year"></span> Yasmin</p>
+        <p>Built with HTML, CSS & JavaScript • <span class="pulse">●</span> Always learning</p>
     </footer>
 
+    <script>
+        // Typing animation
+        const words = ["Java Developer", "Backend Learner", "Problem Solver", "Software Developer"];
+        const typing = document.getElementById("typing");
+        let wordIndex = 0, charIndex = 0, deleting = false;
 
+        function typeLoop() {
+            const word = words[wordIndex];
+            typing.textContent = deleting
+                ? word.substring(0, charIndex--)
+                : word.substring(0, charIndex++);
 
+            let delay = deleting ? 55 : 90;
+
+            if (!deleting && charIndex > word.length) {
+                deleting = true;
+                delay = 1200;
+            } else if (deleting && charIndex < 0) {
+                deleting = false;
+                charIndex = 0;
+                wordIndex = (wordIndex + 1) % words.length;
+                delay = 350;
+            }
+
+            setTimeout(typeLoop, delay);
+        }
+        typeLoop();
+
+        // Scroll reveal
+        const revealItems = document.querySelectorAll(".reveal");
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12 });
+
+        revealItems.forEach(item => observer.observe(item));
+
+        // Reading progress
+        const progressBar = document.getElementById("progressBar");
+        window.addEventListener("scroll", () => {
+            const scrollTop = window.scrollY;
+            const height = document.documentElement.scrollHeight - window.innerHeight;
+            progressBar.style.width = height > 0 ? (scrollTop / height) * 100 + "%" : "0%";
+        });
+
+        // Mobile menu
+        const menuToggle = document.getElementById("menuToggle");
+        const navLinks = document.getElementById("navLinks");
+
+        menuToggle.addEventListener("click", () => {
+            navLinks.classList.toggle("open");
+        });
+
+        document.querySelectorAll(".nav-links a").forEach(link => {
+            link.addEventListener("click", () => navLinks.classList.remove("open"));
+        });
+
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
 </body>
-
 </html>
